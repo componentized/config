@@ -1,11 +1,11 @@
 package componentized:config;
 
 world empty {
-    export wasi:config/store@0.2.0-draft;
+    export wasi:config/store@0.2.0-rc.1;
 }
 
 world defaults {
-    import wasi:config/store@0.2.0-draft;
+    import wasi:config/store@0.2.0-rc.1;
     import defaults: interface {
         // inline wasi:config/store@0.2.0-draft since you can't rename an interface
         variant error {
@@ -15,11 +15,11 @@ world defaults {
         get: func(key: string) -> result<option<string>, error>;
         get-all: func() -> result<list<tuple<string, string>>, error>;
     }
-    export wasi:config/store@0.2.0-draft;
+    export wasi:config/store@0.2.0-rc.1;
 }
 
 world overlay {
-    import wasi:config/store@0.2.0-draft;
+    import wasi:config/store@0.2.0-rc.1;
     import overlay: interface {
         // inline wasi:config/store@0.2.0-draft since you can't rename an interface
         variant error {
@@ -29,11 +29,11 @@ world overlay {
         get: func(key: string) -> result<option<string>, error>;
         get-all: func() -> result<list<tuple<string, string>>, error>;
     }
-    export wasi:config/store@0.2.0-draft;
+    export wasi:config/store@0.2.0-rc.1;
 }
 
 world remap {
-    import wasi:config/store@0.2.0-draft;
+    import wasi:config/store@0.2.0-rc.1;
     import mapping: interface {
         // inline wasi:config/store@0.2.0-draft since you can't rename an interface
         variant error {
@@ -43,11 +43,11 @@ world remap {
         get: func(key: string) -> result<option<string>, error>;
         get-all: func() -> result<list<tuple<string, string>>, error>;
     }
-    export wasi:config/store@0.2.0-draft;
+    export wasi:config/store@0.2.0-rc.1;
 }
 
 world scope {
-    import wasi:config/store@0.2.0-draft;
+    import wasi:config/store@0.2.0-rc.1;
     import scope: interface {
         // inline wasi:config/store@0.2.0-draft since you can't rename an interface
         variant error {
@@ -57,10 +57,10 @@ world scope {
         get: func(key: string) -> result<option<string>, error>;
         get-all: func() -> result<list<tuple<string, string>>, error>;
     }
-    export wasi:config/store@0.2.0-draft;
+    export wasi:config/store@0.2.0-rc.1;
 }
 
 world from-environment {
     import wasi:cli/environment@0.2.3;
-    export wasi:config/store@0.2.0-draft;
+    export wasi:config/store@0.2.0-rc.1;
 }
