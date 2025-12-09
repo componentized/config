@@ -24,7 +24,7 @@ jobs:
       run: cargo binstall --force cargo-component
     - name: Install wkg
       run: cargo binstall --force wkg
-    - name: Install wkg
+    - name: Install wasm-tools
       run: cargo binstall --force wasm-tools
     - name: Fetch wit
       run: make wit
