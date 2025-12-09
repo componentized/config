@@ -24,6 +24,8 @@ jobs:
       run: cargo binstall --force cargo-component
     - name: Install wkg
       run: cargo binstall --force wkg
+    - name: Install wkg
+      run: cargo binstall --force wasm-tools
     - name: Fetch wit
       run: make wit
     - name: Check for drift in generated wit
