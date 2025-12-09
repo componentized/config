@@ -39,6 +39,14 @@ jobs:
         name: components.tar
         path: components.tar
         retention-days: 7
+    - name: Capture WIT
+      working-directory: ./lib
+      run: |
+        for component in *.wasm ; do
+          echo "::group::${component}"
+            wasm-tools component wit "${component}"
+          echo "::endgroup::"
+        done
 
   publish:
     if: startsWith(github.ref, 'refs/tags/')
