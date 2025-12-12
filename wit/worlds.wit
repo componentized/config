@@ -61,6 +61,6 @@ world scope {
 }
 
 world from-environment {
-    import wasi:cli/environment@0.2.3;
+    import wasi:cli/environment@0.2.6;
     export wasi:config/store@0.2.0-rc.1;
 }
