@@ -22,6 +22,8 @@ A collection of utility components that remix wasi:config types and interfaces.
 
 ## Build
 
+A [dev container](https://containers.dev) is available that contains the necessary tools and configuration out of the box.
+
 Prereqs:
 - a rust toolchain
 - [`cargo component`](https://github.com/bytecodealliance/cargo-component)
