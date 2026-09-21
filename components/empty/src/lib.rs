@@ -15,7 +15,7 @@ impl Guest for ConfigEmpty {
 }
 
 wit_bindgen::generate!({
-    path: "../../wit",
+    path: "../wit",
     world: "empty",
     generate_all
 });

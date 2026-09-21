@@ -44,7 +44,7 @@ fn overlay_config_err_map(err: overlay::Error) -> Error {
 }
 
 wit_bindgen::generate!({
-    path: "../../wit",
+    path: "../wit",
     world: "overlay",
     generate_all
 });
