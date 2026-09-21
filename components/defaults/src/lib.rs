@@ -44,7 +44,7 @@ fn defaults_config_err_map(err: defaults::Error) -> Error {
 }
 
 wit_bindgen::generate!({
-    path: "../../wit",
+    path: "../wit",
     world: "defaults",
     generate_all
 });

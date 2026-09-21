@@ -58,7 +58,7 @@ fn mapping_err_map(err: mapping::Error) -> Error {
 }
 
 wit_bindgen::generate!({
-    path: "../../wit",
+    path: "../wit",
     world: "remap",
     generate_all
 });

@@ -21,7 +21,7 @@ impl Guest for EnvironmentToConfig {
 }
 
 wit_bindgen::generate!({
-    path: "../../wit",
+    path: "../wit",
     world: "from-environment",
     generate_all
 });

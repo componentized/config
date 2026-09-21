@@ -54,7 +54,7 @@ fn scope_err_map(err: scope::Error) -> Error {
 }
 
 wit_bindgen::generate!({
-    path: "../../wit",
+    path: "../wit",
     world: "scope",
     generate_all
 });
