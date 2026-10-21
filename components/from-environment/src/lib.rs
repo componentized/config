@@ -1,5 +1,3 @@
-#![no_main]
-
 use exports::wasi::config::store::{Error, Guest};
 use wasi::cli::environment::get_environment;
 
